@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import ExtensionKit
 
 enum AlertStyle {
     case normal
