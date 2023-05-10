@@ -16,13 +16,13 @@ enum AlertStyle {
 class AlertViewController: BaseViewController {
     
     @IBOutlet weak var tranparentView: UIView!
-    @IBOutlet weak var alertView: RoundedView!
+    @IBOutlet weak var alertView: UIView!
     @IBOutlet weak var buttonView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
-    @IBOutlet weak var cancelButton: RoundedButton!
-    @IBOutlet weak var confirmButton: RoundedButton!
+    @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     
     var style:AlertStyle = .normal
