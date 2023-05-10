@@ -13,7 +13,7 @@ open class BaseViewController: UIViewController {
     var logoImageView: UIImageView!
     var navigationBarItems: UIStackView?
 
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.backButtonTitle = " "
     }
@@ -65,10 +65,10 @@ open class BaseViewController: UIViewController {
 //        }
 //
 //    }
-    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
-    public override func viewDidLayoutSubviews() {
+    open override func viewDidLayoutSubviews() {
 //        view.layoutSkeletonIfNeeded()
     }
 }
