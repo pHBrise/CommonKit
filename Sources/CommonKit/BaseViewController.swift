@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class BaseViewController: UIViewController {
+open class BaseViewController: UIViewController {
     var logoImageView: UIImageView!
     var navigationBarItems: UIStackView?
 
