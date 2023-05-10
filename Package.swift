@@ -5,9 +5,8 @@ import PackageDescription
 
 let package = Package(
     name: "CommonKit",
-    platforms: [
-        .iOS(.v14)
-    ], products: [
+    platforms: [.iOS(.v15)],
+    products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "CommonKit",
@@ -23,7 +22,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "CommonKit",
-            dependencies: ["ExtensionKit","UIKit"]),
+            dependencies: ["ExtensionKit"]),
         .testTarget(
             name: "CommonKitTests",
             dependencies: ["CommonKit"]),
